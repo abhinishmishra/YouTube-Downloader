@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YouTube Content Donwloader</title>
+<link rel="stylesheet" href="/static/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">YouTube Content <span>Donwloader</span></div>
+<button onclick="toggleMode()" class="mode">
+<i class="fa-solid fa-moon"></i>
+</button>
+</header>
+
+<section class="hero">
+
+<h1>Download YouTube Videos <span>Instantly</span></h1>
+<p>Convert videos into MP4 or MP3 in one click</p>
+
+<div class="card">
+
+<div class="inputBox">
+<i class="fa-brands fa-youtube"></i>
+<input id="url" placeholder="Paste YouTube URL here..." oninput="previewThumb()">
+</div>
+
+<div id="meta"></div>
+
+<img id="thumb">
+
+<select id="type">
+<option value="mp4">🎥 MP4 Video</option>
+<option value="mp3">🎵 MP3 Audio</option>
+</select>
+
+
+
+<button onclick="startDownload()" class="downloadBtn">
+Download Now
+</button>
+
+<div class="progress">
+<div id="bar"></div>
+</div>
+
+<div id="status"></div>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="box">
+<i class="fa-solid fa-bolt"></i>
+<h3>Fast Speed</h3>
+<p>Ultra fast downloads</p>
+</div>
+
+<div class="box">
+<i class="fa-solid fa-music"></i>
+<h3>MP3 Audio</h3>
+<p>High quality audio files</p>
+</div>
+
+<div class="box">
+<i class="fa-solid fa-video"></i>
+<h3>HD Video</h3>
+<p>720p / 1080p support</p>
+</div>
+
+<div class="box">
+<i class="fa-solid fa-shield"></i>
+<h3>Safe</h3>
+<p>Secure and clean downloads</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Youtube Content Downloader | Built By Abhinish
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
